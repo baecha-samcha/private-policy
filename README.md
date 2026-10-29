@@ -2,6 +2,13 @@
 
 AgentMesh 개인정보처리방침과 공개 서비스 소개 페이지. 빌드 도구·의존성·JavaScript 없이 동작합니다.
 
+## 배포 정보
+
+- Pages 프로젝트: `private-policy`
+- 기본 주소: https://private-policy-654.pages.dev/
+- 사용자 지정 도메인: https://private-policy.baecha.xyz/
+- GitHub `main` 브랜치에 push하면 Cloudflare Pages가 자동 배포합니다.
+
 ## Cloudflare Pages
 
 Workers & Pages → Create application → Pages → Connect to Git에서 이 저장소를 선택합니다.
