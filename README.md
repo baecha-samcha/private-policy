@@ -1,6 +1,12 @@
-# AgentMesh privacy policy
+# AgentMesh 서비스 안내와 정책
 
-AgentMesh 개인정보처리방침, 서비스 이용약관 및 공개 서비스 소개 페이지. 빌드 도구·의존성·JavaScript 없이 동작합니다.
+AgentMesh의 서비스 소개, 개인정보처리방침, 이용약관을 제공하는 정적 웹사이트입니다. 서비스 이용자는 아래 공개 페이지에서 안내를 읽을 수 있고, 직접 호스팅하려는 개발자는 Cloudflare Pages 설정과 로컬 확인 방법을 참고할 수 있습니다.
+
+## 공개 페이지
+
+- [서비스 소개](https://private-policy.baecha.xyz/about/)
+- [개인정보처리방침](https://private-policy.baecha.xyz/)
+- [서비스 이용약관](https://private-policy.baecha.xyz/terms/)
 
 ## 배포 정보
 
@@ -9,6 +15,15 @@ AgentMesh 개인정보처리방침, 서비스 이용약관 및 공개 서비스 
 - 사용자 지정 도메인: https://private-policy.baecha.xyz/
 - GitHub `main` 브랜치에 push하면 Cloudflare Pages가 자동 배포합니다.
 
+## 로컬 확인
+
+```sh
+python3 -m http.server 8080 --directory public
+```
+
+`http://localhost:8080/` 및 `/about/`, `/terms/`에서 확인합니다.
+운영자 문의는 OAuth 동의 화면의 지원 이메일 또는 이 저장소의 Issues를 사용합니다.
+개인정보·토큰·문서 본문은 공개 이슈에 올리지 마세요.
 ## Cloudflare Pages
 
 Workers & Pages → Create application → Pages → Connect to Git에서 이 저장소를 선택합니다.
@@ -42,13 +57,3 @@ https://developers.google.com/terms/api-services-user-data-policy
 
 문서의 데이터 이용·외부 AI 전달·보관 안내는 운영 방식이 바뀌면 함께 갱신해야 합니다.
 OAuth 앱 게시나 검증 완료를 보장하지 않습니다.
-
-## 로컬 확인
-
-```sh
-python3 -m http.server 8080 --directory public
-```
-
-`http://localhost:8080/` 및 `/about/`, `/terms/`에서 확인합니다.
-운영자 문의는 OAuth 동의 화면의 지원 이메일 또는 이 저장소의 Issues를 사용합니다.
-개인정보·토큰·문서 본문은 공개 이슈에 올리지 마세요.
